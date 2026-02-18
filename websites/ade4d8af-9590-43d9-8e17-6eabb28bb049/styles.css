@@ -1,0 +1,151 @@
+:root {
+    --bg: #f0f0f0;
+    --card: #ffffff;
+    --text: #333333;
+    --muted: #888888;
+    --border: rgba(0, 0, 0, 0.1);
+    --primary: #ff8c00;
+    --primary2: #ffa500;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --radius: 16px;
+    --container: 1200px;
+}
+
+body {
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    line-height: 1.6;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.logo {
+    flex: 1;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    flex: 3;
+    justify-content: space-between;
+}
+
+.cta-button {
+    background: linear-gradient(90deg, var(--primary), var(--primary2));
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: var(--primary2);
+}
+
+.secondary-button {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 12px 24px;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+.secondary-button:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 64px 32px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+}
+
+.hero-content {
+    padding: 16px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.badge {
+    background: var(--primary);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+footer {
+    padding: 40px 32px;
+    background: var(--card);
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 16px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 16px;
+}
+
+button:focus-visible {
+    outline: 2px solid var(--primary);
+}
+
+.accordion {
+    margin-top: 16px;
+}
+
+.accordion button {
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+    background: var(--card);
+    border: none;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.accordion button:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.accordion-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
