@@ -1,0 +1,16 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header { background: #333; color: #fff; padding: 10px 0; }
+.logo { font-size: 24px; font-weight: bold; }
+.nav-links { list-style: none; }
+.nav-links li { display: inline; margin-right: 20px; }
+.nav-links a { color: #fff; text-decoration: none; }
+.cta { background: #ff5733; color: #fff; padding: 10px 15px; border: none; cursor: pointer; }
+.hero { background: url('hero.jpg') no-repeat center center/cover; color: white; padding: 50px 20px; text-align: center; }
+.services, .about, .value-propositions, .gallery, .testimonials, .faq, .newsletter, .contact { padding: 40px 20px; }
+.service-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; }
+.footer-columns { display: flex; justify-content: space-between; padding: 20px; background: #222; color: #fff; }
+.footer-column { flex: 1; }
+.footer-column h3 { margin-top: 0; }
+input, textarea { width: 100%; padding: 10px; margin: 10px 0; }
+@media (max-width: 600px) { .nav-links { display: block; } .nav-links li { display: block; margin: 10px 0; } }
