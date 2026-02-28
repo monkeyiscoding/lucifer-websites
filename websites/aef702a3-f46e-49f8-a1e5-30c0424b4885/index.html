@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon - Professional Responsive Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-brand">Canon</div>
+            <nav class="navbar-nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="cta-button">Get Quote</button>
+            <button class="mobile-menu-button" aria-label="Open Menu">
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu-overlay"></div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1>Transform Your Digital Presence</h1>
+                    <p>Discover cutting-edge solutions tailored to elevate your business.</p>
+                    <div class="hero-buttons">
+                        <button class="primary-button">Explore Services</button>
+                        <button class="secondary-button">Contact Us</button>
+                    </div>
+                    <div class="trust-badges">
+                        <div class="badge">100+ Successful Projects</div>
+                        <div class="badge">Certified Experts</div>
+                        <div class="badge">24/7 Support</div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="visual-card"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Our Key Solutions</h2>
+            <div class="features-grid">
+                <div class="feature-card">Feature 1</div>
+                <div class="feature-card">Feature 2</div>
+                <div class="feature-card">Feature 3</div>
+                <div class="feature-card">Feature 4</div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Our Work</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-overlay">Project 1</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-overlay">Project 2</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-overlay">Project 3</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"Canon truly transformed our online presence. Highly recommended!"</p>
+                <span>- John Doe, CEO of InnovateX</span>
+            </div>
+            <div class="testimonial">
+                <p>"Exceptional service and quality. Our go-to web partner."</p>
+                <span>- Jane Smith, Marketing Director at TechCorp</span>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">What services do you offer? <span class="chevron"></span></button>
+                <div class="faq-answer">
+                    <p>We offer a range of services including web design, development, and digital marketing.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How can I get a quote? <span class="chevron"></span></button>
+                <div class="faq-answer">
+                    <p>Contact us through our form or email us directly to discuss your needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Products</h3>
+                <a href="#">Product 1</a>
+                <a href="#">Product 2</a>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <a href="#">Help Center</a>
+                <a href="#">Contact Support</a>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Canon. All rights reserved.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Subscribe to our newsletter">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+</body>
+
+</html>
