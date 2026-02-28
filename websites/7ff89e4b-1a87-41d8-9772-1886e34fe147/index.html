@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucy - Professional Responsive Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand">Lucy</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="cta">Get Quote</button>
+            <button class="mobile-menu" aria-label="Open Menu">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Elevate Your Digital Experience</h1>
+                    <p>Discover modern solutions tailored to your needs. Let's create something amazing together.</p>
+                    <div class="cta-group">
+                        <button class="cta primary">Start Now</button>
+                        <button class="cta secondary">Learn More</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <svg width="100%" height="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:var(--primary);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:var(--primary2);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="100" cy="100" r="80" fill="url(#grad1)" />
+                    </svg>
+                </div>
+            </div>
+            <div class="trust-badges">
+                <div class="badge">99.9% Uptime</div>
+                <div class="badge">24/7 Support</div>
+                <div class="badge">1M+ Clients</div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Our Featured Solutions</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <h3>Innovative Design</h3>
+                    <p>Crafted with precision and attention to detail, our designs stand out from the crowd.</p>
+                </div>
+                <div class="card">
+                    <h3>Reliable Performance</h3>
+                    <p>Experience seamless and robust performance with our cutting-edge technology.</p>
+                </div>
+                <div class="card">
+                    <h3>Scalable Solutions</h3>
+                    <p>Grow your business without limits with solutions that scale with your needs.</p>
+                </div>
+                <div class="card">
+                    <h3>Secure Platform</h3>
+                    <p>Your data is protected with top-notch security protocols and encryption.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Our Work Showcase</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #e09, #d0e);"></div>
+                    <div class="gallery-caption">Project A - A stunning transformation</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #d0e, #e09);"></div>
+                    <div class="gallery-caption">Project B - Innovative approach</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #9e0, #e09);"></div>
+                    <div class="gallery-caption">Project C - Efficient and effective</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #0e9, #9e0);"></div>
+                    <div class="gallery-caption">Project D - Pioneering technology</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial">
+                    <p>"Lucy transformed our online presence. The team's dedication to excellence is unmatched."</p>
+                    <span>- Jennifer K., CEO of Bright Future Inc.</span>
+                </div>
+                <div class="testimonial">
+                    <p>"A seamless experience from start to finish. We couldn't be happier with the results."</p>
+                    <span>- Michael B., Founder of Tech Innovations</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Exceptional service and delivery. Lucy exceeded our expectations in every way."</p>
+                    <span>- Sarah L., Director at Creative Minds</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button">What services do you offer?<span class="chevron">&#x25BC;</span></button>
+                    <div class="accordion-content">
+                        <p>We offer a range of digital solutions, including web development, design, and consulting.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">How can I get a quote?<span class="chevron">&#x25BC;</span></button>
+                    <div class="accordion-content">
+                        <p>Contact us through the form below or email us at contact@lucy.com for a personalized quote.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">Do you provide support?<span class="chevron">&#x25BC;</span></button>
+                    <div class="accordion-content">
+                        <p>Yes, we offer 24/7 support to ensure your business runs smoothly at all times.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Consulting</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Lucy. All rights reserved.</p>
+            <form class="newsletter">
+                <label for="newsletter-email">Subscribe to our newsletter</label>
+                <input type="email" id="newsletter-email" placeholder="Enter your email">
+                <button type="submit" class="cta secondary">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
